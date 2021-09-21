@@ -34,8 +34,8 @@ class Item {
 List<Item> generateItems(int numberOfItems) {
   return List<Item>.generate(numberOfItems, (int index) {
     return Item(
-      headerValue: '${index + 1} ผมเรียนไม่รู้เรื่องครับ',
-      expandedValue: '${index + 1} ก้อดรอปสิครับ รออะไร? ',
+      headerValue: '${index + 1} XXXX',
+      expandedValue: '${index + 1} XXXXXXX? ',
     );
   });
 }
@@ -75,7 +75,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           },
           body: ListTile(
               title: Text(item.expandedValue),
-              subtitle: const Text('กดเลยอย่ารอช้า ----------->'),
+              subtitle: const Text('xxxxxx'),
               trailing: const Icon(Icons.sports_bar),
               onTap: () {}),
           isExpanded: item.isExpanded,
