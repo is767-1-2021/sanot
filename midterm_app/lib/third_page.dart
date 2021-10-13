@@ -84,7 +84,8 @@ class _ThirdpageState extends State<Thirdpage> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // Question
-                                Container(
+
+                                Expanded(
                                   child: Text(
                                     "${item.question}",
                                     style: TextStyle(fontSize: 16),
