@@ -19,9 +19,8 @@ class _TodoPageState extends State<TodoPage> {
   void initState() {
     super.initState();
 
-    widget.controller.onSync
-        .listen((bool synState) => setState(() => isLoading = synState));
-  }
+    widget.controller.onSync.listen(
+      (bool synState) => setState (() => isLoading = synState));
 
   void _getTodos() async {
     var newTodos = await widget.controller.fectTodos();
@@ -64,3 +63,9 @@ class _TodoPageState extends State<TodoPage> {
     );
   }
 }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
